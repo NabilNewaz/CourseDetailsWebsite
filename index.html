@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html>
-<title>Course Details - O9</title>
+<head>
+<title>Course Details - I</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Primary Meta Tags -->
-<title>Course Details (Section - O9)</title>
-<meta name="title" content="Course Details (Section - O9)">
-<meta name="description" content="A Helping Blog To Make Easily Accessible Study Materials For Online Classes. Effective For LEVEL 2 TERM 2 (Section - O9)">
+<title>Course Details (Section - I)</title>
+<meta name="title" content="Course Details (Section - I)">
+<meta name="description" content="A Helping Blog To Make Easily Accessible Study Materials For Online Classes. Effective For LEVEL 3 TERM 2 (Section - I)">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://o9coursedetails.netlify.app">
-<meta property="og:title" content="Course Details (Section - O9)">
-<meta property="og:description" content="A Helping Blog To Make Easily Accessible Study Materials For Online Classes. Effective For LEVEL 2 TERM 2 (Section - O9)">
+<meta property="og:url" content="https://classhelper.nabilnewaz.com">
+<meta property="og:title" content="Course Details (Section - I)">
+<meta property="og:description" content="A Helping Blog To Make Easily Accessible Study Materials For Online Classes. Effective For LEVEL 3 TERM 2 (Section - I)">
 <meta property="og:image" content="https://raw.githubusercontent.com/NabilNewaz/CourseDetailsWebsite/master/meta.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://o9coursedetails.netlify.app">
-<meta property="twitter:title" content="Course Details (Section - O9)">
-<meta property="twitter:description" content="A Helping Blog To Make Easily Accessible Study Materials For Online Classes. Effective For LEVEL 2 TERM 2 (Section - O9)">
+<meta property="twitter:url" content="https://classhelper.nabilnewaz.com">
+<meta property="twitter:title" content="Course Details (Section - I)">
+<meta property="twitter:description" content="A Helping Blog To Make Easily Accessible Study Materials For Online Classes. Effective For LEVEL 3 TERM 2 (Section - I)">
 <meta property="twitter:image" content="https://raw.githubusercontent.com/NabilNewaz/CourseDetailsWebsite/master/meta.png">
 
 
@@ -29,6 +30,27 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+  function showhide() {
+      var d = new Date();
+      var s = document.getElementById(d.getDay());
+      s.style.display = (s.style.display == 'block') ? 'none' : 'block';
+  }
+  showhide();
+
+  function showhidenxt() {
+  var d = new Date();
+  var s = document.getElementsByClassName(d.getDay()+1);
+  for (var i = 0; i < s.length; i++) {
+    s[i].style.display = 'block';
+  }
+}
+
+showhidenxt();
+  
+</script>
+
 <style>
 .fa {
   padding: 8px;
@@ -168,7 +190,8 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 	.w4-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
 	.w4-button:hover{color:#FFFFFF!important;background-color:#000000!important}
 </style>
-<body class="w3-light-grey">
+</head>
+<body onload="showhide();showhidenxt()" class="w3-light-grey">
 
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
@@ -177,37 +200,267 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32"> 
   <h1><b>COURSES DETAILS</b></h1>
-  <h5>EFFECTIVE FOR</br><b>DEPARTMENT OF CSE</b></br><b>LEVEL 2 TERM 2 (Online-9)</br>Daffodil International University</b></h5>
-  <p>Welcome To A Helping Blog Of <span class="w3-tag"><a href="https://nabilnewaz.netlify.app" target = "_blank">Nabil Newaz</a></span></p>
+  <h5>EFFECTIVE FOR</br><b>DEPARTMENT OF CSE</b></br><b>LEVEL 3 TERM 2 (Section - I)</br>Daffodil International University</b></h5>
+  <p>Welcome To A Helping Blog Of <span class="w3-tag"><a href="https://nabilnewaz.com" target = "_blank">Nabil Newaz</a></span></p>
 </header>
 
 <!-- Grid -->
 <div class="w3-row">
 
+  <div class="w3-col l6 s12">
+      <!-- Classes -->
+      <div class="w3-card w3-margin">
+        <div class="w3-container w3-padding">
+          <h4>Today's Classes</h4>
+          <h6><script>var date = new Date();document.write(date.toDateString());</script></h6>
+        </div>
+    
+        <ul class="w3-ul w3-hoverable w3-white">
+      
+      <!----- Saturday------>
+    
+    <div id="6" style="display:none">
+      <li class="w3-padding-16">
+        <span class="w3-large"><center><h2><b>No Class Today</b></h2></center></span><br>
+    </li>
+    </div>
+      
+      <!----- Sunday------>
+    
+      <div id="0" style="display:none">
+      <li class="w3-padding-16">
+          <span class="w3-large"><b>Operating Systems - CSE 323</b></span><br>
+          <span>At 01.00PM To 02.30PM</br></span>
+      <p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('https://meet.google.com/pcj-xpur-bzn')" ><b>Joining Link</b></button></p>
+      </li>
+    <li class="w3-padding-16">
+          <span class="w3-large"><b>Data Mining and Machine Learning - CSE 321</b></span><br>
+          <span>At 02.30PM To 04.00PM</br></span>
+      <p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('https://meet.google.com/odf-qnbj-rjc')" ><b>Joining Link</b></button></p>
+      </li>
+    <li class="w3-padding-16">
+          <span class="w3-large"><b>System Analysis and Design - CSE 325</b></span><br>
+          <span>At 04.00PM To 05.30PM</br></span>
+      <p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('https://meet.google.com/dtg-qbns-ckw')" ><b>Joining Link</b></button></p>
+      </li>
+      </div>
+        
+      <!----- Monday------>
+      
+      <div id="1" style="display:none">
+      <li class="w3-padding-16">
+            <span class="w3-large"><b>Data Mining and Machine Learning Lab - CSE 322</b></span><br>
+            <span>At 08.30AM To 11.30AM</br></span>
+        <p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('https://meet.google.com/odf-qnbj-rjc')" ><b>Joining Link</b></button></p>
+        </li>
+      <li class="w3-padding-16">
+            <span class="w3-large"><b>Economics - ECO 321</b></span><br>
+            <span>At 11.30AM To 01.00PM</br></span>
+        <p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('https://meet.google.com/gcr-brrg-ifm')" ><b>Joining Link</b></button></p>
+        </li>
+      </div>
+      
+      <!----- Tuesday------>
+    
+    <div id="2" style="display:none">
+      <li class="w3-padding-16">
+        <span class="w3-large"><b>Operating Systems Lab - CSE 324</b></span><br>
+        <span>At 08.30AM To 11.30AM</br></span>
+    <p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('https://meet.google.com/pcj-xpur-bzn')" ><b>Joining Link</b></button></p>
+    </li>
+  <li class="w3-padding-16">
+        <span class="w3-large"><b>Data Mining and Machine Learning - CSE 321</b></span><br>
+        <span>At 11.30AM To 01.00PM</br></span>
+    <p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('https://meet.google.com/odf-qnbj-rjc')" ><b>Joining Link</b></button></p>
+    </li>
+    </div>	
+    
+      <!----- Wednesday------>
+    
+    <div id="3" style="display:none">
+      <li class="w3-padding-16">
+        <span class="w3-large"><center><h2><b>No Class Today</b></h2></center></span><br>
+    </li>
+    </div>
+    
+    <!----- Thursda------>
+      
+    <div id="4" style="display:none">
+      <li class="w3-padding-16">
+        <span class="w3-large"><b>Research and Innovation - CSE 326</b></span><br>
+        <span>At 11.30AM To 01.00PM</br></span>
+    <p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('https://meet.google.com/hxo-nrgs-vxr')" ><b>Joining Link</b></button></p>
+    </li>
+    <li class="w3-padding-16">
+      <span class="w3-large"><b>System Analysis and Design - CSE 325</b></span><br>
+      <span>At 01.00PM To 02.30PM</br></span>
+  <p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('https://meet.google.com/dtg-qbns-ckw')" ><b>Joining Link</b></button></p>
+  </li>
+  <li class="w3-padding-16">
+    <span class="w3-large"><b>Economics - ECO 321</b></span><br>
+    <span>At 02.30PM To 04.00PM</br></span>
+  <p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('https://meet.google.com/gcr-brrg-ifm')" ><b>Joining Link</b></button></p>
+  </li>
+    </div>
+      
+      <!----- Friday------>
+      <div id="5" style="display:none">
+      <li class="w3-padding-16">
+          <span class="w3-large"><center><h2><b>No Class Today</b></h2></center></span><br>
+      </li>
+      </div>
+      
+      <!--End Classes-->
+      
+      <!--
+      <li class="w3-padding-16">
+            <span class="w3-large"><b>Vacation of Eid-Ul-Fitr 2020</b></span><br>
+            <span>Students of Daffodil International University are hereby notified that all the classes of DIU will remain closed from 21 to 28 May 2020 on the occasion of “Eid-Ul-Fitr”.</br></br><b>Online classes of Bachelor programs will resume on 30 May 2020 (Saturday).</b></span></br>
+        </br><span>EID MUBARAK 🌙</a></span>
+        </li>
+      -->
+        </ul>
+      </div>
+    </div>
+
+
+
+    <div class="w3-col l6 s12">
+      <!-- Classes -->
+      <div class="w3-card w3-margin">
+        <div class="w3-container w3-padding">
+          <h4>Tomorrow's Classes</h4>
+          <h6><script>
+          var date = (new Date(+new Date() + 86400000));document.write(date.toDateString());
+          </script></h6>
+        </div>
+    
+        <ul class="w3-ul w3-hoverable w3-white">
+      
+      <!----- Saturday------>
+    
+    <div class="6" style="display:none">
+      <li class="w3-padding-16">
+        <span class="w3-large"><center><h2><b>No Class Tomorrow</b></h2></center></span><br>
+    </li>
+    </div>
+      
+      <!----- Sunday------>
+    
+      <div class="0" style="display:none">
+        <li class="w3-padding-16">
+          <span class="w3-large"><b>Operating Systems - CSE 323</b></span><br>
+          <span>At 01.00PM To 02.30PM</br></span>
+      </li>
+    <li class="w3-padding-16">
+          <span class="w3-large"><b>Data Mining and Machine Learning - CSE 321</b></span><br>
+          <span>At 02.30PM To 04.00PM</br></span>
+      </li>
+    <li class="w3-padding-16">
+          <span class="w3-large"><b>System Analysis and Design - CSE 325</b></span><br>
+          <span>At 04.00PM To 05.30PM</br></span>
+      </li>
+      </div>
+        
+      <!----- Monday------>
+      
+      <div class="1" style="display:none">
+        <li class="w3-padding-16">
+          <span class="w3-large"><b>Data Mining and Machine Learning Lab - CSE 322</b></span><br>
+          <span>At 08.30AM To 11.30AM</br></span>
+      </li>
+    <li class="w3-padding-16">
+          <span class="w3-large"><b>Economics - ECO 321</b></span><br>
+          <span>At 11.30AM To 01.00PM</br></span>
+      </li>
+      </div>
+      
+      <!----- Tuesday------>
+    
+    <div class="2" style="display:none">
+      <li class="w3-padding-16">
+        <span class="w3-large"><b>Operating Systems Lab - CSE 324</b></span><br>
+        <span>At 08.30AM To 11.30AM</br></span>
+    </li>
+  <li class="w3-padding-16">
+        <span class="w3-large"><b>Data Mining and Machine Learning - CSE 321</b></span><br>
+        <span>At 11.30AM To 01.00PM</br></span>
+    </li>
+    </div>	
+    
+      <!----- Wednesday------>
+    
+    <div class="3" style="display:none">
+      <li class="w3-padding-16">
+        <span class="w3-large"><center><h2><b>No Class Tomorrow</b></h2></center></span><br>
+    </li>
+    </div>
+    
+    <!----- Thursda------>
+      
+    <div class="4" style="display:none">
+      <li class="w3-padding-16">
+        <span class="w3-large"><b>Research and Innovation - CSE 326</b></span><br>
+        <span>At 11.30AM To 01.00PM</br></span>
+    </li>
+    <li class="w3-padding-16">
+      <span class="w3-large"><b>System Analysis and Design - CSE 325</b></span><br>
+      <span>At 01.00PM To 02.30PM</br></span>
+  </li>
+  <li class="w3-padding-16">
+    <span class="w3-large"><b>Economics - ECO 321</b></span><br>
+    <span>At 02.30PM To 04.00PM</br></span>
+  </li>
+    </div>
+      
+      <!----- Friday------>
+      <div class="5" style="display:none">
+      <li class="w3-padding-16">
+            <span class="w3-large"><center><h2><b>No Class Tomorrow</b></h2></center></span><br>
+      </li>
+      </div>
+      
+      <!--End Classes-->
+      
+      <!--
+      <li class="w3-padding-16">
+            <span class="w3-large"><b>Vacation of Eid-Ul-Fitr 2020</b></span><br>
+            <span>Students of Daffodil International University are hereby notified that all the classes of DIU will remain closed from 21 to 28 May 2020 on the occasion of “Eid-Ul-Fitr”.</br></br><b>Online classes of Bachelor programs will resume on 30 May 2020 (Saturday).</b></span></br>
+        </br><span>EID MUBARAK 🌙</a></span>
+        </li>
+      -->
+        </ul>
+      </div>
+    </div>
+
+
 <!-- Blog entries -->
 <div class="w3-col l8 s12">
+
+  
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
     <div class="w3-container">
 	</br>
 	<center>
-      <h3><b>ALGORITHM (CSE214)</b></h3>
-      <h5>Course Teacher : Tanzina Afroz Rimi</br>Contact Number : <a href="tel:+8801716405475">+8801716405475</a></br>E-mail : <a href="mailto:tanzinaafroz.cse@diu.edu.bd">tanzinaafroz.cse@diu.edu.bd</a><span class="w3-opacity"></span></h5>
+      <h3><b>DATA MINING AND MACHINE LEARNING (CSE321)</b></h3>
+      <h5>Course Teacher : Abu Kaisar Mohammad Masum</br>Contact Number : <a href="tel:+8801676882085">+8801676882085</a></br>E-mail : <a href="mailto:abu.cse@diu.edu.bd">abu.cse@diu.edu.bd</a><span class="w3-opacity"></span></h5>
 	  </center>
     </div>
 	
 	<div class="w3-container">
 	<div class="w3-row">
         <center>
-		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/course/view.php?id=5487')" ><b>BLC COURSE LINK</b></button></p>
-		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/mod/attendance/view.php?id=114745')" ><b>BLC ATTENDANCE LINK</b></button></p>
-		</center>
+		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/course/view.php?id=11456')" ><b>BLC COURSE LINK</b></button></p>
+		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/mod/attendance/view.php?id=565383')" ><b>BLC ATTENDANCE LINK</b></button></p>
+      <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://t.me/joinchat/jGrt3WSd4N5iMDc1')" ><b>TELEGRAM GROUP LINK</b></button></p>
+    </center>
       </div>
 	 </div>
 
     <div class="w3-container">
 	<center>
-      <p>BLC Enrollment Key : CSE_214_tar</p>
+      <p>BLC Enrollment Key : D&M-2021_i</p>
 	  </center>
 	  </br>
       <div class="w3-row">
@@ -215,31 +468,92 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
   </div>
   <hr>
+
+    <!-- Blog entry -->
+    <div class="w3-card-4 w3-margin w3-white">
+      <div class="w3-container">
+    </br>
+    <center>
+        <h3><b>DATA MINING AND MACHINE LEARNING LAB (CSE322)</b></h3>
+        <h5>Course Teacher : Abu Kaisar Mohammad Masum</br>Contact Number : <a href="tel:+8801676882085">+8801676882085</a></br>E-mail : <a href="mailto:abu.cse@diu.edu.bd">abu.cse@diu.edu.bd</a><span class="w3-opacity"></span></h5>
+      </center>
+      </div>
+    
+    <div class="w3-container">
+    <div class="w3-row">
+          <center>
+        <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/course/view.php?id=11695')" ><b>BLC COURSE LINK</b></button></p>
+        <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/mod/attendance/view.php?id=577834')" ><b>BLC ATTENDANCE LINK</b></button></p>
+        <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://t.me/joinchat/jGrt3WSd4N5iMDc1')" ><b>TELEGRAM GROUP LINK</b></button></p>
+      </center>
+        </div>
+     </div>
+  
+      <div class="w3-container">
+    <center>
+        <p>BLC Enrollment Key : D&M_Lab-2021_i</p>
+      </center>
+      </br>
+        <div class="w3-row">
+        </div>
+      </div>
+    </div>
+    <hr>
 
  <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
     <div class="w3-container">
 	</br>
 	<center>
-      <h3><b>DATA COMMUNICATION (CSE 225)</b></h3>
-      <h5>Course Teacher : Lamia Rukhsara</br>Contact Number : <a href="tel:+8801819652162">+8801819652162</a></br>E-mail : <a href="mailto:lamia.cse@diu.edu.bd">lamia.cse@diu.edu.bd</a><span class="w3-opacity"></span></h5>
+      <h3><b>OPERATING SYSTEMS (CSE 323)</b></h3>
+      <h5>Course Teacher : Warda Ruheen Bristi</br>Contact Number : <a href="tel:+8801521212065">+8801521212065</a></br>E-mail : <a href="mailto:ruheen.cse@diu.edu.bd">ruheen.cse@diu.edu.bd</a><span class="w3-opacity"></span></h5>
 	  </center>
     </div>
 	
 	<div class="w3-container">
 	<div class="w3-row">
         <center>
-		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/course/view.php?id=6022')" ><b>BLC COURSE LINK</b></button></p>
-		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/mod/attendance/view.php?id=116888')" ><b>BLC ATTENDANCE LINK</b></button></p>
-		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://t.me/joinchat/TPjA1ht43o4WKmnGZYZ7Uw')" ><b>TELEGRAM GROUP LINK</b></button></p>
+		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/course/view.php?id=11628')" ><b>BLC COURSE LINK</b></button></p>
+		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/mod/attendance/view.php?id=574959')" ><b>BLC ATTENDANCE LINK</b></button></p>
+		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://t.me/joinchat/kBTPo6PjQe03NTk1')" ><b>TELEGRAM GROUP LINK</b></button></p>
 		</center>
       </div>
 	 </div>
 
     <div class="w3-container">
 	<center>
-      <p>BLC Enrollment Key : cse225-O9</p>
-	  <p>Google Classroom Code : gx7x2a3</p>
+      <p>BLC Enrollment Key : CSE323_Ii</p>
+	  </center>
+	  </br>
+      <div class="w3-row">
+      </div>
+    </div>
+  </div>
+  <hr>
+
+   <!-- Blog entry -->
+   <div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container">
+	</br>
+	<center>
+      <h3><b>OPERATING SYSTEMS LAB (CSE 324)</b></h3>
+      <h5>Course Teacher : Warda Ruheen Bristi</br>Contact Number : <a href="tel:+8801521212065">+8801521212065</a></br>E-mail : <a href="mailto:ruheen.cse@diu.edu.bd">ruheen.cse@diu.edu.bd</a><span class="w3-opacity"></span></h5>
+	  </center>
+    </div>
+	
+	<div class="w3-container">
+	<div class="w3-row">
+        <center>
+		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/course/view.php?id=11629')" ><b>BLC COURSE LINK</b></button></p>
+		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/mod/attendance/view.php?id=575381')" ><b>BLC ATTENDANCE LINK</b></button></p>
+		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://t.me/joinchat/kBTPo6PjQe03NTk1')" ><b>TELEGRAM GROUP LINK</b></button></p>
+		</center>
+      </div>
+	 </div>
+
+    <div class="w3-container">
+	<center>
+      <p>BLC Enrollment Key : CSE324_Ii</p>
 	  </center>
 	  </br>
       <div class="w3-row">
@@ -253,24 +567,23 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-container">
 	</br>
 	<center>
-      <h3><b>DIGITAL ELECTRONICS (CSE 223)</b></h3>
-      <h5>Course Teacher : Mohammad Imtiaz Hossain</br>Contact Number : <a href="tel:+8801746802202">+8801746802202</a></br>E-mail : <a href="mailto:imtiaz.cse@diu.edu.bd">imtiaz.cse@diu.edu.bd</a><span class="w3-opacity"></span></h5>
+      <h3><b>SYSTEM ANALYSIS AND DESIGN (CSE 325)</b></h3>
+      <h5>Course Teacher : Ms. Nasrin Akter</br>Contact Number : <a href="tel:+8801816602129">+8801816602129</a></br>E-mail : <a href="mailto:nasrin.cse@diu.edu.bd">nasrin.cse@diu.edu.bd</a><span class="w3-opacity"></span></h5>
 	  </center>
     </div>
 	
 	<div class="w3-container">
 	<div class="w3-row">
         <center>
-          <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/course/view.php?id=6033')" ><b>BLC COURSE LINK</b></button></p>
-		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/mod/attendance/view.php?id=117795')" ><b>BLC ATTENDANCE LINK</b></button></p>
+          <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/course/view.php?id=10858')" ><b>BLC COURSE LINK</b></button></p>
+		 <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://t.me/joinchat/J36_r7JA6HpiYzM1')" ><b>TELEGRAM GROUP LINK</b></button></p>
         </center>
       </div>
 	 </div>
 
     <div class="w3-container">
 	<center>
-      <p>BLC Enrollment Key : cse22309</p>
-	  <p>Google Classroom Code : opgzhkm</p>
+      <p>BLC Enrollment Key : Sec-(CSE325)-I</p>
 	  </center>
 	  </br>
       <div class="w3-row">
@@ -284,24 +597,23 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-container">
 	</br>
 	<center>
-      <h3><b>DIGITAL ELECTRONICS LAB (CSE 224)</b></h3>
-      <h5>Course Teacher : Mohammad Imtiaz Hossain</br>Contact Number : <a href="tel:+8801746802202">+8801746802202</a></br>E-mail : <a href="mailto:imtiaz.cse@diu.edu.bd">imtiaz.cse@diu.edu.bd</a><span class="w3-opacity"></span></h5>
+      <h3><b>RESEARCH AND INNOVATION (CSE 326)</b></h3>
+      <h5>Course Teacher : Md. Ferdouse Ahmed Foysal</br>Contact Number : <a href="tel:+8801620857287">+8801620857287</a></br>E-mail : <a href="mailto:ferdouse.cse@diu.edu.bd">ferdouse.cse@diu.edu.bd</a><span class="w3-opacity"></span></h5>
 	  </center>
     </div>
 	
 	<div class="w3-container">
 	<div class="w3-row">
         <center>
-          <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/course/view.php?id=6257')" ><b>BLC COURSE LINK</b></button></p>
-		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/mod/attendance/view.php?id=136067')" ><b>BLC ATTENDANCE LINK</b></button></p>
-        </center>
+          <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/course/view.php?id=11974')" ><b>BLC COURSE LINK</b></button></p>
+		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://t.me/joinchat/ZifW7qL8QeMwNDRl')" ><b>TELEGRAM GROUP LINK</b></button></p>
+      </center>
       </div>
 	 </div>
 
     <div class="w3-container">
 	<center>
-      <p>BLC Enrollment Key : cse224s20</p>
-	  <p>Google Classroom Code : lnm55xs</p>
+      <p>BLC Enrollment Key : Section-I1</p>
 	  </center>
 	  </br>
       <div class="w3-row">
@@ -315,24 +627,24 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-container">
 	</br>
 	<center>
-      <h3><b>STATISTICS AND PROBABILITY (CSE 221)</b></h3>
-      <h5>Course Teacher : Maksuda Akter Rubi</br>Contact Number : <a href="tel:+8801685508399">+8801685508399</a></br>E-mail : <a href="mailto:rubi.ged@diu.edu.bd">rubi.ged@diu.edu.bd</a><span class="w3-opacity"></span></h5>
+      <h3><b>ECONOMICS (ECO 321)</b></h3>
+      <h5>Course Teacher : Nujhat Anjum Ani</br>Contact Number : <a href="tel:+8801318214282">+8801318214282</a></br>E-mail : <a href="mailto:ani.bba@daffodilvarsity.edu.bd">ani.bba@daffodilvarsity.edu.bd</a><span class="w3-opacity"></span></h5>
 	  </center>
     </div>
 	
 	<div class="w3-container">
 	<div class="w3-row">
         <center>
-          <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/course/view.php?id=3733')" ><b>BLC COURSE LINK</b></button></p>
-		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/mod/attendance/view.php?id=140823')" ><b>BLC ATTENDANCE LINK</b></button></p>
-		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://t.me/joinchat/SbFK-lacb10FFRYv3pr8tQ')" ><b>TELEGRAM GROUP LINK</b></button></p>
+          <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/course/view.php?id=10876')" ><b>BLC COURSE LINK</b></button></p>
+		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://diuclassresponse.daffodilvarsity.edu.bd')" ><b>CLASS RESPONSE LINK</b></button></p>
+		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://t.me/joinchat/iCuO2gNY4IRjMjQ1')" ><b>TELEGRAM GROUP LINK</b></button></p>
         </center>
       </div>
 	 </div>
 
     <div class="w3-container">
 	<center>
-      <p>BLC Enrollment Key : STA221o9*</p>
+      <p>BLC Enrollment Key : eco321</p>
 	  </center>
 	  </br>
       <div class="w3-row">
@@ -341,143 +653,12 @@ and is wrapped around the whole page content, except for the footer in this exam
   </div>
   <hr>
   
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <div class="w3-container">
-	</br>
-	<center>
-      <h3><b>SOFTWER PROJECT III (CSE 226)</b></h3>
-      <h5>Course Teacher : Mohd. Saifuzzaman</br>Contact Number : <a href="tel:+8801715484340">+8801715484340</a></br>E-mail : <a href="mailto:saifuzzaman.cse@diu.edu.bd">saifuzzaman.cse@diu.edu.bd</a><span class="w3-opacity"></span></h5>
-	  </center>
-    </div>
-	
-	<div class="w3-container">
-	<div class="w3-row">
-        <center>
-          <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/course/view.php?id=6247')" ><b>BLC COURSE LINK</b></button></p>
-		  <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.open('https://elearn.daffodilvarsity.edu.bd/mod/attendance/view.php?id=147296')" ><b>BLC ATTENDANCE LINK</b></button></p>
-        </center>
-      </div>
-	 </div>
-
-    <div class="w3-container">
-	<center>
-      <p>BLC Enrollment Key : Cse226-09</p>
-	  </center>
-	  </br>
-      <div class="w3-row">
-      </div>
-    </div>
-  </div>
-  <hr>
   
 <!-- END BLOG ENTRIES -->
 </div>
 
 <!-- Introduction menu -->
 <div class="w3-col l4">
-
-<!-- Classes -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Today's Classes</h4>
-	    <h6><script>document.write(new Date());</script></h6>
-    </div>
-
-    <ul class="w3-ul w3-hoverable w3-white">
-	
-	<!----- Saturday------>
-	<!-- ->
-	<li class="w3-padding-16">
-        <span class="w3-large"><b>Algorithm Lab - CSE 215</b></span><br>
-        <span>At 08.30AM To 11.30AM</br></span>
-		<p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('https://meet.google.com/prp-ihgk-euh')" ><b>Join Class</b></button></p>
-    </li>
-	<li class="w3-padding-16">
-        <span class="w3-large"><b>Software Project III - CSE 226</b></span><br>
-        <span>At 11.30AM To 01.00PM</br></span>
-		<p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('https://meet.google.com/')" ><b>Join Class</b></button></p>
-    </li>
-	
-	<!----- Sunday------>
-	<!-- -->
-	<li class="w3-padding-16">
-        <span class="w3-large"><center><h2><b>No Class Today</b></h2></center></span><br>
-	</li>
-		
-	<!----- Monday------>
-	<!-- ->
-	<li class="w3-padding-16">
-        <span class="w3-large"><b>Algorithm - CSE 214</b></span><br>
-        <span>At 08.30AM To 10.00AM</br></span>
-		<p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('#')" ><b>End Class</b></button></p>
-    </li>
-	<li class="w3-padding-16">
-        <span class="w3-large"><b>Statistics and Probability - STA 221</b></span><br>
-        <span>At 10.00AM To 11.30AM</br></span>
-		<p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('#')" ><b>End Class</b></button></p>
-    </li>
-	<li class="w3-padding-16">
-        <span class="w3-large"><b>Data Communication - CSE 225</b></span><br>
-        <span>At 11.30AM To 01.00PM</br></span>
-		<p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('#')" ><b>End Class</b></button></p>
-    </li>
-	
-	<!----- Tuesday------>
-	<!-- ->
-	<li class="w3-padding-16">
-        <span class="w3-large"><center><h2><b>No Class Today</b></h2></center></span><br>
-	</li>
-		
-	<!----- Wednesday------>
-	<!-- ->
-	<li class="w3-padding-16">
-        <span class="w3-large"><b>Statistics and Probability - STA 221</b></span><br>
-		<span>At 08.30AM To 10.00AM</br></span>
-		<p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('#')" ><b>End Class</b></button></p>
-    </li>
-	<li class="w3-padding-16">
-        <span class="w3-large"><b>Digital Electronics - CSE 223</b></span><br>
-        <span>At 10.00AM To 11.30AM</br></span>
-		<p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('#')" ><b>Class End</b></button></p>
-    </li>
-	<li class="w3-padding-16">
-        <span class="w3-large"><b>Data Communication - CSE 225</b></span><br>
-        <span>At 11.30AM To 01.00PM</br></span>
-		<p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('#')" ><b>No Class Today</b></button></p>
-    </li>
-	
-	<!----- Thursday------>
-	<!-- ->
-	<li class="w3-padding-16">
-        <span class="w3-large"><b>Digital Electronics Lab - CSE 224</b></span><br>
-		<span>At 09.00AM To 11.00AM</br></span>
-		<p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('https://meet.google.com/')" ><b>Joining Link</b></button></p>
-    </li>
-	<li class="w3-padding-16">
-        <span class="w3-large"><b>Algorithm - CSE 214</b></span><br>
-        <span>At 11.30AM To 01.00PM</br></span>
-		<p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.location.href=('https://meet.google.com/nom-xvsc-upp')" ><b>Joining Link</b></button></p>
-    </li>
-	
-	<!----- Friday------>
-	<!-- ->
-	<li class="w3-padding-16">
-        <span class="w3-large"><center><h2><b>No Class Today</b></h2></center></span><br>
-	</li>
-	
-	<!--End Classes-->
-	
-	<!--
-	<li class="w3-padding-16">
-        <span class="w3-large"><b>Vacation of Eid-Ul-Fitr 2020</b></span><br>
-        <span>Students of Daffodil International University are hereby notified that all the classes of DIU will remain closed from 21 to 28 May 2020 on the occasion of “Eid-Ul-Fitr”.</br></br><b>Online classes of Bachelor programs will resume on 30 May 2020 (Saturday).</b></span></br>
-		</br><span>EID MUBARAK 🌙</a></span>
-    </li>
-	-->
-    </ul>
-  </div>
-
 
   <!-- Notifications -->
   <div class="w3-card w3-margin">
@@ -496,9 +677,9 @@ and is wrapped around the whole page content, except for the footer in this exam
 	
 	<li class="w3-padding-16">
 	
-        <span class="w3-large"><b>Class Routine - Summer 2020 -L2T2 (V2)</b></span><br>
-        <span>Class Routine For Section O9 - Summer 2020 -Level 2 Term 2. It is effective for both online and ofline classes. </br></span>
-		<p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.open('https://docdro.id/GiNSeab')" ><b>Routine Link</b></button></p>
+        <span class="w3-large"><b>Class Routine - Summer 2021 -L3T2 (V2)</b></span><br>
+        <span>Class Routine For Section I - Summer 2021 -Level 3 Term 2. It is effective for both online and ofline classes. </br></span>
+		<p><button class="w4-button w3-padding-large w3-white w3-border" onclick="window.open('https://nabilnewaz.ml/RoutineL3T2SI')" ><b>Routine Link</b></button></p>
     </li>
 	
 	<li class="w3-padding-16">
@@ -511,6 +692,7 @@ and is wrapped around the whole page content, except for the footer in this exam
   </div>
   <hr> 
   
+
   <!-- About Card -->
   <div class="w3-card w3-margin w3-margin-top">
   <img src="avatar_g.jpg" style="width:100%">
