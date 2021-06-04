@@ -40,10 +40,10 @@
   showhide();
 
   function showhidenxt() {
-  var d = new Date();
-  var s = document.getElementsByClassName(d.getDay()+1);
-  for (var i = 0; i < s.length; i++) {
-    s[i].style.display = 'block';
+  var e = (new Date(+new Date() + 86400000));
+  var f = document.getElementsByClassName(e.getDay());
+  for (var i = 0; i < f.length; i++) {
+    f[i].style.display = 'block';
   }
 }
 
